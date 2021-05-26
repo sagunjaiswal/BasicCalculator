@@ -1,0 +1,90 @@
+body {
+  background-color: grey;
+}
+#calculatorContainer {
+  height: 550px;
+  width: 1000px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url(IMG_20190406_124443.jpg);
+  margin: 20px auto; /*the left and right margin is set to auto the bottom and up margin is set to 20px*/
+}
+#calculator {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  width: 320px;
+  height: 520px;
+  background-color: #eaedef;
+  margin: 0 auto; /*sets it horizontally*/
+  top: 20px; /*gives it a space on the top*/
+  position: relative;
+  border-radius: 5px; /*for curved edges*/
+}
+#calculatorResult {
+  height: 120px;
+}
+#keyboard {
+  height: 400px;
+}
+#history {
+  text-align: right;
+  height: 20px;
+  margin: 0 20px;
+  padding-top: 20px;
+  font-size: 15px;
+  color: #919191;
+  /*giving height,margin,padding,and font size different to the history to distinguish it from thereal output*/
+}
+#output {
+  text-align: right;
+  height: 60px;
+  margin: 10px 20px;
+  font-size: 30px;
+}
+#keyboard {
+  height: 400px;
+}
+.operator,
+.number,
+.empty {
+  width: 50px;
+  height: 50px;
+  margin: 15px;
+  float: left;
+  border-radius: 50%;
+  border-width: 0;
+  font-size: 15px;
+  font-weight: bold;
+}
+.number,
+.empty {
+  /*givinng them the same background color as rest of the calculatr to make the other buttons stand out*/
+  background-color: #eaedef;
+}
+.number,
+.operator {
+  cursor: pointer; /*when we hover the pointer turns to hand finger*/
+}
+/*to give it style when it clicks*/
+.operator:active,
+.number:active {
+  /*to do that we use the active pseudo class*/
+  font-size: 13px;
+  /*when we click there one blink happens where the number clicked becomes a smaller size of 13px*/
+}
+/*to color the buttons of the operators*/
+button:nth-child(4) {
+  /*we use the nth child selector as every fourth row of our html codes has an operator*/
+  font-size: 20px;
+  background-color: #20b2aa;
+}
+button:nth-child(8) {
+  font-size: 20px;
+  background-color: #ffa500;
+}
+button:nth-child(12) {
+  font-size: 20px;
+  background-color: #b22045;
+}
+button:nth-child(16) {
+  font-size: 20px;
+  background-color: #49b220;
+}
